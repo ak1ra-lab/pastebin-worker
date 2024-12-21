@@ -2,11 +2,12 @@ name: Deploy
 on:
   push:
     branches:
-      - goshujin
+      - komj.uk
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment: komj-uk-pastebin-worker
     steps:
       - uses: actions/checkout@v4
 

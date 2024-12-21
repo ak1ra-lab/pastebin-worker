@@ -15,16 +15,16 @@ rules = [
 
 [[routes]]
 # Refer to https://developers.cloudflare.com/workers/wrangler/configuration/#routes
-pattern = "shz.al"
+pattern = "komj.uk"
 custom_domain = true
 
 [[kv_namespaces]]
 binding = "PB"  # do not touch this
-id = "cc398e983a234aa19de5ea6af571a483"  # id of your KV namespace
+id = "b2c5362cce9e43829e64a85cd018470e"  # id of your KV namespace
 
 [vars]
 # must be consistent with your routes
-BASE_URL = "https://shz.al"
+BASE_URL = "https://komj.uk"
 
 # url to repo, displayed in the index page
 REPO = "https://github.com/SharzyL/pastebin-worker"
@@ -33,10 +33,10 @@ REPO = "https://github.com/SharzyL/pastebin-worker"
 FAVICON = "https://sharzy.in/favicon-32x32.png"
 
 # the name displayed in TOS
-TOS_MAINTAINER = "Sharzy"
+TOS_MAINTAINER = "ak1ra"
 
 # the email displayed in TOS
-TOS_MAIL = "pb@shz.al"
+TOS_MAIL = "ak1ra@komj.uk"
 
 # Cache-Control max-age for static pages
 CACHE_STATIC_PAGE_AGE = 7200
