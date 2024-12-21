@@ -2,11 +2,13 @@ name: Test and Deploy
 on:
   push:
     branches:
-      - goshujin
+      - komj.uk
+  workflow_dispatch: ~
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment: komj-uk-pastebin-worker
     steps:
       - uses: actions/checkout@v4
 
