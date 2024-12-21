@@ -10,6 +10,9 @@
     "dev": "wrangler dev --var BASE_URL:http://localhost:8787 --port 8787",
     "build": "wrangler deploy --dry-run --outdir=dist",
     "delete-paste": "wrangler kv:key delete --binding PB",
+    "list-pastes": "wrangler kv:key list --binding PB",
+    "pb_hist": "wrangler kv:key list --binding PB | jq -r '.[] | \"\\(.name):\\(.metadata.passwd)\"'",
+    "curl-delete": "wrangler kv:key list --binding PB | jq -r '.[] | \"curl -XDELETE https://komj.uk/\\(.name):\\(.metadata.passwd)\"'",
     "test": "vitest",
     "coverage": "vitest run --coverage"
   },
